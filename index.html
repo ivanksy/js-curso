@@ -3,8 +3,52 @@
 <head>
 	<title>Inicio</title>
 	<meta charset="utf-8">
+	<script>
+		//alert("Bienvenido");
+	</script>
 </head>
 <body>
 	<script src="main.js"></script>
+	<script >
+		var cadena = "Hola x2";
+		var entero = 13;
+		var entero2 = 28;
+		var entero3 = 154;
+		var logic = true && true;
+		//nombre = prompt("Ingresa tu nombre");
+		//apellido = prompt("Ingresa tu apellido");
+		var lista = ["elemento 1", 13, true];
+		var lista2 = ["elemento 1", 28, false];
+		var lista3 = lista.concat(lista2);
+		console.log(cadena);
+		console.log(entero);
+		console.log(entero+entero2);
+		document.write(cadena);
+		console.log(13+28);
+		console.log(logic);
+		console.log(typeof(logic));
+		console.log(cadena[1]);
+		console.log(cadena.length);
+		console.log(cadena.slice(1,4));
+		//document.write(" Hola "+nombre.toUpperCase()+apellido.toLowerCase());
+		console.log(lista.length);
+		lista3.pop();
+		lista3.shift();
+		lista3.unshift("nuevo", "elemento13");
+		lista3.sort();
+		console.log(lista3);
+
+		var nuevo = prompt("Ingresa el nombre");
+		var nombres = ["Ivan","Nieto","Lozada",nuevo];
+		console.log(nombres);
+
+		if (entero>entero2) {
+			console.log("Es mayor");
+		}else if(entero3>entero){
+			console.log("Es igual");
+		}else{
+			console.log("Es menor");
+		}
+		</script>
 </body>
 </html>
