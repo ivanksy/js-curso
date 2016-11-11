@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF8">
+	<title></title>
+</head>
+<body>
+
+	<!-->
+	<form>
+		<input type="text" id="numero" value="0"></input>
+		<input type="button" onclick="Incrementa()" value="Aumenta"></input>
+		<input type="button" onclick="Decrementa()" value="Reduce"></input>
+		
+	</form>
+	<script>
+		function Incrementa(){
+			var value = parseInt(document.getElementById('numero').value);
+			value ++;
+			document.getElementById('numero').value = value;
+		}
+		function Decrementa(){
+			var value = parseInt(document.getElementById('numero').value);
+			value ;
+			document.getElementById('numero').value = value;
+		}
+	</script>
+	<!-->
+
+<script>
+	
+	/*var dolar = function(numero){
+	return resultado = numero * 20;
+	console.log(resultado);
+	}
+	dolar(5);
+
+	var suma = function(numero1,numero2){
+		var resultado = numero1 + numero2;
+		console.log(resultado);
+	}
+	suma(13,28);*/
+
+	/*var velocidad = function(parametro){
+		if (parametro <= 80) {
+			console.log("Vas normal");
+		}else{
+			console.log("Vas Rápido");
+		}
+	}
+	velocidad(75);*/
+
+	var json = {
+		cadena: "Una cadena",
+		arreglo: [
+			{nombre:"Ivan", edad:21},
+			{nombre:"Juan", edad:22}
+			],
+		numero: 45,
+		boolean: true,
+		variable: function(){
+			console.log("Esto es "+ this.cadena);
+		}
+	}
+	console.log(json.arreglo[0].nombre);
+	//console.log(json.variable());
+</script>
+</body>
+</html>
